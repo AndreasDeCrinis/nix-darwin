@@ -8,9 +8,9 @@
   # allow packages which are not open source
   nixpkgs.config.allowUnfree = true;
 
-  networking.computerName = "drackbook.local";
-  networking.hostName = "drackbook";
-  # networking.localHostName = "drackbook.local";
+  networking.computerName = "decrinisbook.local";
+  networking.hostName = "decrinisbook";
+  # networking.localHostName = "decrinisbook.local";
   networking.knownNetworkServices = [
     "USB 10/100/1000 LAN"
     "USB 10/100/1000 LAN 2"
@@ -19,10 +19,9 @@
     "Wi-Fi"
     "Thunderbolt Bridge"
     "iPhone USB USB"
-    "FullStackS Labor RRZ Graz"
   ];
   networking.dns = [ "8.8.8.8" "1.1.1.1" ];
-  users.users.drackthor.home = "/Users/drackthor";
+  users.users.andreasdecrinis.home = "/Users/andreasdecrinis";
 
   # Auto upgrade nix package and the daemon service.
   # services.nix-daemon.enable = true; # outdated
@@ -56,38 +55,39 @@
     onActivation.upgrade = true;
     # Cisco Anyconnect
     brews = [
-        "snyk-cli"
+        # "snyk-cli"
     ];
 
     casks = [
-      # "1password"
+      "1password"
+      "visual-studio-code"
       # "google-chrome"
       # "jetbrains-toolbox"
       # "rambox"
       # "steam"
-      "microsoft-office"
-      "microsoft-auto-update"
-      "microsoft-teams"
-      "wifiman"
-      "screen-studio"
-      "fixkey"
-      "istat-menus"
-      "cleanshot"
-      "textsniper"
-      "webex"
-      "citrix-workspace"
-      "elgato-stream-deck"
-      "vlc"
-      "obs"
-      "daisydisk"
-      "airbuddy"
-      "calibre"
+      # "microsoft-office"
+      # "microsoft-auto-update"
+      # "microsoft-teams"
+      # "wifiman"
+      # "screen-studio"
+      # "fixkey"
+      # "istat-menus"
+      # "cleanshot"
+      # "textsniper"
+      # "webex"
+      # "citrix-workspace"
+      # "elgato-stream-deck"
+      # "vlc"
+      # "obs"
+      # "daisydisk"
+      # "airbuddy"
+      # "calibre"
     ];
     masApps = {
-      "Parallels Desktop" = 1085114709;
-      "PDF Gear" = 6469021132;
-      "TeleprompterPAD" = 1507218595;
-      "Bitwarden" = 1352778147;
+      # "Parallels Desktop" = 1085114709;
+      # "PDF Gear" = 6469021132;
+      # "TeleprompterPAD" = 1507218595;
+      # "Bitwarden" = 1352778147;
     };
   };
 
@@ -96,24 +96,24 @@
     dock.mru-spaces =
       false; # i love this, macos will not rearrange the desktops
     dock.magnification = true;
-    dock.persistent-apps = [
-      "${pkgs.iterm2}/Applications/iTerm2.app"
-      "/Applications/Microsoft Outlook.app"
-      # "/System/Applications/Calendar.app"
-      "/System/Applications/Mail.app"
-      "/Applications/Microsoft Teams.app"
-      "/Applications/1Password.app"
-      "/Applications/Bitwarden.app"
-      "/Applications/Spotify.app"
-      "/Applications/Rambox.app"
-      "/Applications/Arc.app"
-      "/Applications/Obsidian.app"
-      "/Users/drackthor/Applications/PyCharm Professional Edition.app"
-      "/Applications/Google Chrome.app"
-    ];
+    # dock.persistent-apps = [
+    #   "${pkgs.iterm2}/Applications/iTerm2.app"
+    #   "/Applications/Microsoft Outlook.app"
+    #   # "/System/Applications/Calendar.app"
+    #   "/System/Applications/Mail.app"
+    #   "/Applications/Microsoft Teams.app"
+    #   "/Applications/1Password.app"
+    #   "/Applications/Bitwarden.app"
+    #   "/Applications/Spotify.app"
+    #   "/Applications/Rambox.app"
+    #   "/Applications/Arc.app"
+    #   "/Applications/Obsidian.app"
+    #   "/Users/andreasdecrinis/Applications/PyCharm Professional Edition.app"
+    #   "/Applications/Google Chrome.app"
+    # ];
     dock.persistent-others = [
       # sadly need to use CustomUserPreferences at the moment because you can not configure fan etc. here
-      #"/Users/drackthor/Downloads"
+      #"/Users/andreasdecrinis/Downloads"
       #"/Applications"
     ];
     CustomUserPreferences = {

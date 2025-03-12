@@ -10,13 +10,13 @@ Follow the commands below to set up, update, or clean up your system.
 Use the following command to initiate your macOS configuration with the specified flake:
 
 ```bash
-nix run nix-darwin -- switch --flake ~/code/repos/drackthor/nix-darwin
+nix run nix-darwin -- switch --flake ~/code/repos/andreasdecrinis/nix-darwin
 ```
 
 Afterwards, you can use this command for the same purpose:
 
 ```bash
-darwin-rebuild switch --flake ~/code/repos/drackthor/nix-darwin
+darwin-rebuild switch --flake ~/code/repos/andreasdecrinis/nix-darwin
 ```
 
 ---

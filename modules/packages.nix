@@ -1,14 +1,14 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    arc-browser
-    bartender
+    # arc-browser
+    # bartender
     bat
     boundary
     bruno
     cnquery
     cnspec
     direnv
-    discord
+    # discord
     docker-client
     drawio
     eza
@@ -30,7 +30,7 @@
     nix-index
     nixfmt-rfc-style
     nmap
-    obsidian
+    # obsidian
     oh-my-zsh
     openvpn
     pre-commit
